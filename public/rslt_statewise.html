@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerate Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link href="../src/index.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b4968421e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="ml-2">
+                            <a><img src="../images/SIDLLY.png" alt="" class="main-result-icon-nav"></a>
+                        </div>
+                        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto pl-5 pr-5">
+                                <a class="nav-link nav-event" href="../public/snin.html" id="homeSignin">Sign in</a>
+                                <a class="nav-link nav-event" href="../public/snup.html" id="homeSignup"><span class="sign-up-button">sign up</span></a>
+                                <div class="user-profile-container" id="userProfileContainer">
+                                    <img src="../images/file.png" alt="" class="user-profile-img">
+                                    <div class="detail-user-profile-cont" id="detailUserProfile">
+                                        <ul class="rail-user1">
+                                            <li><img src="../images/file.png" class="rail-user-img"></li>
+                                            <li id="railUserName"></li>
+                                            <hr>
+                                            <li class="list-myaccount">
+                                                <a href="../public/my_accnt.html" class="myaccount">My Account</a>
+                                                <a href="" class="sign-out">Sign Out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="page-website college-nav-bg scroll-college-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light pr-5">
+                        <a class="navbar-brand result-name" href="../public/rslt_home.html">SIDLLY<br><span class="result-nav-heading">Results</span></a>
+                        <button class="navbar-toggler result-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="result-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav m-auto">
+                                <ul class="dropDown-container">
+                                    <li class="dropdown-list"><a href="../public/rslt_home.html">Home</a></li>
+                                    <li class="dropdown-list">
+                                        <a  class="nav-college-results">Statewise Results<span class="featurer-dropdown"><i class="fa-solid fa-caret-down"></i></span></a>
+                                        <ul class="dropDown-mini pt-3 pb-3" id="gettingDropdownList"></ul>
+                                    </li>
+                                    <li class="dropdown-list"><a href="../public/rslt_contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="college-results-rail-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="college-districts-navbelow-cont">
+                        <div class="col-12 col-md-6 result-rail-main-heading">
+                            <h2><span class="highlight-rsult-head">Educational </span>Empowerment Platform for Swift Academic Progress</h2>
+                            <h6>Developed an innovative web-based platform focused on accelerating academic progress by providing students with 
+                                instant access to their examination results. The solution is designed to streamline the result checking process, 
+                                enabling students to make informed decisions promptly.
+                            </h6>
+                            <a href="../public/snup.html"class="result-access-button-box"><span class="result-access-button">get started</span></a>
+                        </div>
+                        <div class="col-12 col-md-6 below-result-rail-main-heading">
+                            <video class="district-result-nav-img" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/sd.mp4" >
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-district-collg-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="upper-college-cont-box">
+                        <i class="fa-solid fa-circle fa-2xs sd1" aria-hidden="true" style="color: red;"></i>
+                        <i class="fa-solid fa-circle fa-2xs" aria-hidden="true" style="color: green;"></i>
+                        <i class="fa-solid fa-circle fa-2xs" aria-hidden="true" style="color: yellow;"></i>
+                    </div>
+                    <div class="college-container">
+                        <div class="col-12 col-md-3" id="districtCollegeContainer"></div>
+                        <div class="col-12 col-md-9 pl-0 pr-0">
+                            <div class="district-wise-college-results-container" id="districtwiseCollegeListContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-how-dis-res-cont">
+        <div class="how_results_display_cont">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-heading-dis"><h2>Here’s how the Results Access works</h2></div>
+                        <div class="flex-wrap">
+                            <div class="content">
+                                <div class="index">
+                                    <p class="block">1</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Connecting Interactive District and College Explorer</h3>
+                                    <p>The first step to enable a comprehensive 
+                                        <a href="">list of districts within a particular state is elegantly displayed.</a>
+                                        Each district is meticulously associated with the 
+                                        colleges within its jurisdiction.This feature aims to provide users with a 
+                                        <a href="">detailed overview of the educational landscape,</a>
+                                        facilitating informed decision-making regarding academic institutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-content-display">
+                                <video class="results-display-mini-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/state&clgImg.mp4" >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="flex-wrap">
+                            <div class="content order1 order-md-2">
+                                <div class="index1">
+                                    <p class="block">2</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Setting up the Eligibility Information</h3>
+                                    <p>The Second step to delves into the eligibility aspect of result access.
+                                        <a href="">To seamlessly access examination results, users need to fulfill specific eligibility criteria.</a>
+                                        This includes providing necessary information, and ensuring 
+                                        <a href="">authentication.</a>
+                                        Much like connecting Leegality and Sidlly Contracts accounts,the process involves a step-by-step approach.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="eligi-content-display order2 order-md-1">
+                                <video class="eligi-display-mini-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/Eligibility.mp4" >
+                                </video>
+                                <video class="bottom-eligi-display" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/Eligibility_round.mp4" >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="flex-wrap another-flex">
+                            <div class="content">
+                                <div class="index2">
+                                    <p class="block">3</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Setting up the Information for Instant Result Access</h3>
+                                    <p>The third step to enable your academic journey with our streamlined User Information Form.
+                                        <a href="">Information</a>
+                                        Designed for simplicity and efficiency, this form is the gateway 
+                                        to unlocking instant access to your examination results.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-information-display">
+                                <video class="results-display-mini-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/information3.mp4" >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="flex-wrap another-flex1">
+                            <div class="content order1 order-md-2">
+                                <div class="index3">
+                                    <p class="block">4</p>
+                                </div>
+                                <div class="description">
+                                    <h3>Setting up the Eligibility Information</h3>
+                                    <p>Congratulations on reaching the pinnacle of your academic journey!
+                                        <a href="">academic journey!</a>
+                                        In Fourth step,your results are 
+                                        elegantly presented, offering a comprehensive overview of your performance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="eligi-content-display change-display-color-4 order2 order-md-1">
+                                <video class="eligi-display-mini-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/Results-declare-img.mp4" >
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mini-main-clg-res-cont">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-cneter-min-container mt-5 mb-5">
+                        <h2>Access Your Results from Anywhere, Anytime</h2>
+                        <ul class="col-12 mini-main-detail-result-cont">
+                            <li class="bg-min-main1 mb-5">
+                                <span>Home</span>
+                                <div class="sub-min-main2-cont">
+                                    <h3>Home</h3>
+                                    <p>Whether you're relaxing in your living room, studying in your bedroom, or even sitting in your cozy home 
+                                        office, you can conveniently check your academic results from the comfort of your own home. No need to 
+                                        travel or wait for specific locations; your academic progress is at your fingertips, right where you are.</p>
+                                    <a>Learn more</a>
+                                </div>
+                                <img src="../images/access-home.webp" alt="" class="check-results-img">
+                            </li>
+                            <li class="bg-min-main2 mb-5">
+                                <div class="sub-min-main2-cont">
+                                    <h3>Academic Result Accessibility Beyond Boundaries</h3>
+                                    <p>Access academic outcomes effortlessly from anywhere, promoting educational progress without limitations.</p>
+                                    <a>Learn more</a>
+                                </div>
+                                <img src="../images/access-beyond.webp" alt="" class="check-results-img">
+                            </li>
+                            <li class="bg-min-main3 mb-5">
+                                <span>Internet Cafe</span>
+                                <div class="sub-min-main2-cont">
+                                    <h3>Internet Cafe</h3>
+                                    <p>Even if you're at an internet cafe, you can easily log in to our platform and check your academic results. 
+                                        Enjoy the flexibility to access your progress from public places like cafes, ensuring you stay informed about your 
+                                        academic journey, no matter where you are.</p>
+                                    <a>Learn more</a>
+                                </div>
+                                <img src="../images/access-internetcafe.webp" alt="" class="check-results-img">
+                            </li>
+                            <li class="bg-min-main4 mb-5">
+                                <span>Mobile Device</span>
+                                <div class="sub-min-main2-cont">
+                                    <h3>Mobile Device</h3>
+                                    <p>Access your academic progress instantly through your mobile device. Whether you're using a smartphone or 
+                                        tablet, our platform is designed to provide you with quick and convenient access to your results while 
+                                        you're on the move. Stay informed about your academic journey, anytime, anywhere, with the convenience of 
+                                        your mobile device.</p>
+                                    <a>Learn more</a>
+                                </div>
+                                <img src="../images/access-mobile.webp" alt="" class="check-results-img">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bas-to-adv-container">
+                        <div class="col-12 col-lg-5 col-md-6 base1">
+                            <h2>Empower Results, from the Initial Stage to Excellence</h2>
+                            <div class="sub-e1-in-base1 pt-3">
+                                <div class="sub-mini-e1-in-base1">
+                                    <img src="../images/why-results-side-tick.png" alt="">
+                                    <a href="">Result Access</a>
+                                </div>
+                                <div class="sub-mini-e1-in-base1">
+                                    <img src="../images/why-results-side-tick.png" alt="">
+                                    <a href="">Student Portal</a>
+                                </div>
+                            </div>
+                            <div class="sub-e1-in-base1">
+                                <div class="sub-mini-e1-in-base1">
+                                    <img src="../images/why-results-side-tick.png" alt="">
+                                    <a href="">Progress Tracking</a>
+                                </div>
+                                <div class="sub-mini-e1-in-base1">
+                                    <img src="../images/why-results-side-tick.png" alt="">
+                                    <a href="">Data Management</a>
+                                </div>
+                            </div>
+                            <div class="sub-e1-in-base1">
+                                <div class="sub-mini-e1-in-base">
+                                    <img src="../images/why-results-side-tick.png" alt="">
+                                    <a href="">Educational Transformation</a>
+                                </div>
+                            </div>
+                            <h4>Furthermore, you can access all educational features and benefits from a single account, without the need for separate payments or subscriptions</h4>
+                            <a href="../public/snup.html"class="result-access-button-box"><span class="result-access-button">know More</span></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="582" viewBox="0 0 184 582" class="cmplx-card"><defs><clipPath id="clip-paths"><rect id="Rectangle_80962" data-name="Rectangle 8096" width="184" height="582" fill="#fff" stroke="#707070" stroke-width="1"></rect></clipPath><linearGradient id="linear-gradient-boxs" x1="-0.007" y1="0.019" x2="1.032" y2="0.978" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ff8f22"></stop><stop offset="0.31" stop-color="#ff48b4"></stop><stop offset="0.65" stop-color="#5540e8"></stop><stop offset="1" stop-color="#0090ff"></stop></linearGradient></defs><g id="Mask_Group_585" data-name="Mask Group 585" clip-path="url(#clip-paths)"><g id="Group_158801" data-name="Group 158801"><g id="Group_158783" data-name="Group 158783" transform="matrix(0.588, 0.809, -0.809, 0.588, 303.607, 106.644)"><path id="Exclusion_43" data-name="Exclusion 43" d="M360.278,375.277H15a15,15,0,0,1-15-15V15A15,15,0,0,1,15,0H360.278a15,15,0,0,1,15,15V360.277a15,15,0,0,1-15,15ZM18.391,6.562a12,12,0,0,0-12,12V356.78a12,12,0,0,0,12,12H356.608a12,12,0,0,0,12-12V18.562a12,12,0,0,0-12-12Z" transform="translate(0 0)" fill="url(#linear-gradient-boxs)"></path></g><g id="Group_158793" data-name="Group 158793" transform="translate(0 169.97) rotate(-41)"><path id="Exclusion_4-24" data-name="Exclusion 44" d="M360.278,375.277H15a15,15,0,0,1-15-15V15A15,15,0,0,1,15,0H360.278a15,15,0,0,1,15,15V360.277a15,15,0,0,1-15,15ZM18.391,6.562a12,12,0,0,0-12,12V356.78a12,12,0,0,0,12,12H356.608a12,12,0,0,0,12-12V18.562a12,12,0,0,0-12-12Z" transform="translate(0 0)" fill="url(#linear-gradient-boxs)"></path></g></g></g></svg>
+                        </div>
+                        <div class="col-12 col-lg-5 col-md-6 base2">
+                            <h2>10x Speed in Every Stage of Academic Progress Acceleration.</h2>
+                            <div class="sub-e2-main-cont">
+                                <div class="sub-min-e2-one">
+                                    <div class="sub-mini-e2-in-base2">
+                                        <img src="../images/why-results-side-tick.png" alt="">
+                                        <a >No Setup Required</a>
+                                    </div>
+                                    <div class="sub-mini-e2-in-base2">
+                                        <img src="../images/why-results-side-tick.png" alt="">
+                                        <a>Swift Academic Progress</a>
+                                    </div>
+                                    <div class="sub-mini-e2-in-base2">
+                                        <img src="../images/why-results-side-tick.png" alt="">
+                                        <a>Instant Deployment</a>
+                                    </div>
+                                    <div class="sub-mini-e2-in-base2">
+                                        <img src="../images/why-results-side-tick.png" alt="">
+                                        <a>Maintenance-Free</a>
+                                    </div>
+                                    <div class="sub-bottom-lg-bg"></div>
+                                </div>
+                                <div class="sub-min-e2-two pt-5">
+                                    <span>Accelerate</span>
+                                    <span>Access</span>
+                                    <span>Achieve</span>
+                                    <span>Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="statewise-results-fqs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mt-5 mb-5 pt-5">
+                    <div class="fques-container">
+                        <video class="fques-img" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/recruit-home-banner.mp4" >
+                        </video>
+                        <ul class="fques-list-container mt-5 pt-5">
+                            <h1 class="fques-hd">Frequently asked questions</h1>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques2">
+                                    <h4>How does the eligibility process work?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques2">
+                                    <h6>The eligibility process of step 2 involves users completing the enrollment process for instant access to 
+                                        their academic results. This includes confirming their enrollment as a student, providing necessary details,
+                                        and agreeing to terms and conditions for result acceleration.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques3">
+                                    <h4>Can you explain the information users need to fill in step 3 process to access their results?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques3">
+                                    <h6> In step 3, users are required to provide essential details such as First Name, Last Name, Date of Birth, 
+                                        Stream, Semester, Registered College ID, Phone Number, and Email Address. These details ensure secure and 
+                                        personalized access to individual exam results.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques4">
+                                    <h4>What does step 4, the Declared Results Overview, showcase?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques4">
+                                    <h6>Step 4 presents a comprehensive overview of the user's academic performance. It includes the number of 
+                                        pass subjects, fail subjects, and the overall percentage achieved. This section allows users to quickly 
+                                        understand their results and explore detailed insights into subject-wise performance.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques5">
+                                    <h4>How can users interact with the results presented in step 4?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques5">
+                                    <h6>The interface in step 4 is designed to be user-friendly, enabling users to interact with their results 
+                                        effortlessly. Users can explore subject-wise performance, identify strengths, and areas for improvement, 
+                                        empowering them to set new academic goals.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques6">
+                                    <h4>Is Instant Result Access available throughout India, as mentioned in step 1?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques6">
+                                    <h6>Yes, Instant Result Access is designed to be accessible throughout India. Users can view results by state 
+                                        and district, providing a nationwide platform for accessing academic outcomes seamlessly.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques7">
+                                    <h4>Is there a support mechanism for users, as mentioned in step 2?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques7">
+                                    <h6>Yes, users can receive further information or support by calling the provided contact number (7032814255).
+                                         Our support team is ready to assist with any queries or concerns related to the Instant Result Access 
+                                         platform.</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer-nav">
+        <div class="wrapper">
+            <div class="fn-inner-wrap">
+                <div class="zh-contact">
+                    <h5>Instant Access</h5>
+                    <ul>
+                        <li><a>Districts and Colleges</a></li>
+                        <li><a>Enrollment Information</a></li>
+                        <li><a>Result Access Form</a></li>
+                        <li><a>Declared Results</a></li>
+                        <li><a>Frequently Asked Questions</a></li>
+                        <li><a>User Experience</a></li>
+                        <li><a>Security Measures</a></li>
+                        <li><a>User Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Learn</h5>
+                    <ul>
+                        <li><a>Newsletter</a></li>
+                        <li><a>Training Certification</a></li>
+                        <li><a>Academy</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Tech Talk </a></li>
+                        <li><a>Perspectives</a></li>
+                        <li><a>Knowledge Base</a></li>
+                        <li><a>The Long Game</a></li>
+                        <li><a>Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a>User Community</a></li>
+                        <li><a>Customer Stories</a></li>
+                        <li><a>Influence</a></li>
+                        <li><a>Partner with Us</a></li>
+                        <li><a>SIDLLY for Startups</a></li>
+                        <li><a>Affiliate Program</a></li>
+                        <li><a>Humans of SIDLLY</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a>About Us</a></li>
+                        <li><a>Press</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Newsroom</a></li>
+                        <li><a>Branding Assets</a></li>
+                        <li><a>SIDLLY Schools</a></li>
+                        <li><a>Service Status</a></li>
+                        <li><a>Careers</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Contact Sales</h5>
+                    <ul>
+                        <li><a>Phone </a></li>
+                        <li class="d-flex flex-column"><a href="tel:7032814255">(+91)7032814255</a><a href="tel:8328516199">(+91)8328516199</a></li>
+                        <li><a> Email </a></li>
+                        <li><a href="mailto:results@sidllycorp.com" class="mailto">results@sidllycorp.com</a></li>
+                        <li><a>Support</a></li>
+                        <li><a>Talk to Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Security and Privacy</h5>
+                    <ul class="zh-policy">
+                        <li><a>Security</a></li>
+                        <li><a>IPR Complaints</a></li>
+                        <li><a> Anti-spam Policy</a></li>
+                        <li><a>Terms of Service</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Cookie Policy</a></li>
+                        <li><a>Abuse Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fn-btm-wrap">
+                <div class="zh-scl-share1-container">
+                    <div class="zh-scl-share1">
+                        <a class="social-icons twitter"></a>
+                        <a class="social-icons fb"></a>
+                        <a class="social-icons instagram"></a>
+                        <a class="social-icons link"></a>
+                        <a class="social-icons youtube"></a>
+                    </div>
+                </div>
+                <ul class="zh-policy">
+                    <li><a>SIDLLY Home</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Security</a></li>
+                    <li><a>IPR Complaints</a></li>
+                    <li><a> Anti-spam Policy</a></li>
+                    <li><a>Terms of Service</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Cookie Policy</a></li>
+                    <li><a>Abuse Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="../src/nav.js"></script>
+    <script src="../src/state&clgData.js"></script>
+    <script src="../src/rslt_statewise.js"></script>
+</body>

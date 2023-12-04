@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerate Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link href="../src/index.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b4968421e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white nav-container">
+                    <div class="ml-2">
+                        <a><img src="../images/SIDLLY.png" alt="" class="main-result-icon-nav"></a>
+                    </div>
+                    <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto pl-5 pr-5">
+                            <a class="nav-link nav-event" href="../public/snin.html" id="homeSignin">Sign in</a>
+                            <a class="nav-link nav-event" href="../public/snup.html" id="homeSignup"><span class="sign-up-button">sign up</span></a>
+                            <div class="user-profile-container" id="userProfileContainer">
+                                <img src="../images/file.png" alt="" class="user-profile-img">
+                                <div class="detail-user-profile-cont" id="detailUserProfile">
+                                    <ul class="rail-user1">
+                                        <li><img src="../images/file.png" class="rail-user-img"></li>
+                                        <li id="railUserName"></li>
+                                        <hr>
+                                        <li class="list-myaccount">
+                                            <a href="../public/my_accnt.html" class="myaccount">My Account</a>
+                                            <a href="" class="sign-out">Sign Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="results-tab-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-max-rail-tab-container">
+                        <div class="main-rail-tab-container">
+                            <h3 class="main-tab-head">Instant Academic Access Enrollment</h3>
+                            <ul class="rail-tab-container" id="myTab" role="tablist">
+                                <li class="top-tab col" role="presentation">
+                                    <div class="tab-progress active" id="stage1">
+                                        <div class="half-circle"></div>
+                                        <a class="progress-content" id="eligibilityTab" data-toggle="tab" href="#eligibility" role="tab" aria-controls="eligibility" aria-selected="true">Eligibility</a>      
+                                    </div>
+                                </li>
+                                <li class="top-tab col" role="presentation">
+                                    <div class="tab-not-progress" id="stage2">
+                                        <div class="dash-circle"></div>
+                                        <a class="progress-content disabled" id="informationTab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">Information</a>
+                                    </div>
+                                </li>
+                                <li class="top-tab col" role="presentation">
+                                    <div class="tab-not-progress" id="stage3">
+                                        <div class="dash-circle"></div>
+                                        <a class="progress-content disabled" id="resultsTab" data-toggle="tab" href="#results" role="tab" aria-controls="results" aria-selected="false">Access Results</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-5" id="myTabContent">
+                                <div class="tab-pane fade show active" id="eligibility" role="tabpanel" aria-labelledby="eligibilityTab">
+                                    <div class="content-container">
+                                        <form id="eligibilityForm" class="eligibility-form">
+                                            <h2 class="important-e1">Important:</h2>
+                                            <p class="important-content">To complete the enrollment process for instant access to your academic results, please visit our 
+                                                dedicated enrollment website. If you prefer to enroll by phone or have any questions, don't hesitate
+                                                 to call us at <span class="highlight-no"><a href="">7032814255</a></span>.</p>
+                                            <div class="eligibility-container">
+                                                <h2 class="eligibility-e1">Eligibility</h2>
+                                                <div class="sub-eligible-cont">
+                                                    <label>Are you currently enrolled as a student in an academic institution?<span class="astertick">*</span></label>
+                                                    <div class="sub-mini-eligible-cont">
+                                                        <label for="residenceYes">
+                                                            <input type="radio" name="residence" id="residenceYes" data-error="errorResidence" data-key="residence" value="yes" class="custom-radio">
+                                                            Yes
+                                                        </label>
+                                                        <label for="residenceNo">
+                                                            <input type="radio" name="residence" id="residenceNo" data-error="errorResidence" data-key="residence" value="no" class="custom-radio ml-2">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                    <p id="errorResidence" class="error-elgible-msg"></p>
+                                                </div>
+                                                <div class="sub-eligible-cont">
+                                                    <label>Are you currently involved in any pending legal cases or criminal investigations?<span class="astertick">*</span>
+                                                    </label>
+                                                    <div class="sub-mini-eligible-cont">
+                                                        <label for="involvedYes">
+                                                            <input type="radio" name="involved" id="involvedYes" data-error="errorInvolved" data-key="involved" value="yes" class="custom-radio">
+                                                            Yes
+                                                        </label>
+                                                        <label for="involvedNo">
+                                                            <input type="radio" name="involved" id="involvedNo" data-error="errorInvolved" data-key="involved" value="no" class="custom-radio ml-2">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                    <p id="errorInvolved" class="error-elgible-msg"></p>
+                                                </div>
+                                                <div class="sub-eligible-cont">
+                                                    <label>Is your academic institution located in the Bharath?<span class="astertick">*</span>
+                                                    </label>
+                                                    <div class="sub-mini-eligible-cont">
+                                                        <label for="locationYes">
+                                                            <input type="radio" name="location" id="locationYes" data-error="errorLocation" data-key="location" value="yes" class="custom-radio">                                                            
+                                                            Yes
+                                                        </label>
+                                                        <label for="locationNo">
+                                                            <input type="radio" name="location" id="locationNo" data-error="errorLocation" data-key="location" value="no" class="custom-radio ml-2">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                    <p id="errorLocation" class="error-elgible-msg"></p>
+                                                </div>
+                                                <div class="sub-eligible-cont">
+                                                    <label>Do you agree to our terms and conditions regarding privacy and data usage for result acceleration?<span class="astertick">*</span>
+                                                    </label>
+                                                    <div class="sub-mini-eligible-cont">
+                                                        <label for="termsYes">
+                                                            <input type="radio" name="terms" id="termsYes" data-error="errorTerms" data-key="terms" value="yes" class="custom-radio">
+                                                            Yes
+                                                        </label>
+                                                        <label for="termsNo">
+                                                            <input type="radio" name="terms" id="termsNo" data-error="errorTerms" data-key="terms" value="no" class="custom-radio ml-2">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                    <p id="errorTerms" class="error-elgible-msg"></p>
+                                                </div>
+                                                <label>Would you like to receive further information or support? call <span class="highlight-no"><a href="">7032814255</a></span>
+                                                </label>
+                                                <p><span class="astertick">*</span>Indicates a required field.</p>
+                                                <a class="information-box" id="continueToInformation"><span class="access-button">continue to Information</span></a>
+                                                <video class="elinre-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/elinre-img.mp4" >
+                                                </video>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="informationTab">
+                                    <div class="content-container">
+                                        <form id="informationForm" class="information-form">
+                                            <h2 class="important-e1">Information</h2>
+                                            <div class="sub-information-box">
+                                                <label for="informationCollegeName">College Name</label>
+                                                <input type="text" class="information-form-box" id="informationCollegeName" disabled>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationFirstName">First Name<span class="astertick">*</span></label>
+                                                <input type="text"  data-error="errorFirstname" data-key="firstname" aria-required="true" aria-label="Enter your name" aria-describedby="namefield-error" aria-invalid="true" class="information-form-box" id="informationFirstName" placeholder="Enter First Name">
+                                                <p class="information-error" id="errorFirstname"></p>
+                                                <span class="information-error-img error-img-firstname"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationLastName">Last Name<span class="astertick">*</span></label>
+                                                <input type="text" data-error="errorLastname" data-key="lastname" aria-required="true" aria-label="Enter your name" aria-describedby="namefield-error" aria-invalid="true" class="information-form-box" id="informationLastName" placeholder="Enter Last Name">
+                                                <p class="information-error" id="errorLastname"></p>
+                                                <span class="information-error-img error-img-lastname"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationDateOfBirth">Date of Birth (MM/DD/YYYY)<span class="astertick">*</span></label>
+                                                <input type="text" data-error="errorDob" data-key="dob" class="information-form-box" id="informationDateOfBirth" placeholder="MM/DD/YYYY">
+                                                <p class="information-error" id="errorDob"></p>
+                                                <span class="information-error-img error-img-dob"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="streams">Select Your Stream<span class="astertick">*</span></label>
+                                                <select name="selectStreams" data-error="errorStreams" data-key="stream" id="streams" class="information-form-box" type="dropdown">
+                                                    <option value="">Select Stream</option>
+                                                    <option value="Computer Engineering">CSE</option>
+                                                    <option value="Chemical Engineering">CHEM</option>
+                                                    <option value="Civil Engineering">CIVIL</option>
+                                                    <option value="Electronics Engineering">ECE</option>
+                                                    <option value="Electrical Engineering">EEE</option>
+                                                    <option value="Mechanical Engineering">MECH</option>
+                                                </select>
+                                                <p class="information-error" id="errorStreams"></p>
+                                                <span class="information-error-img error-img-stream"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="semester">Select Your Semester to Access Results<span class="astertick">*</span></label>
+                                                <select name="accessSemResults" data-error="errorSemster" data-key="sem" id="semester" class="information-form-box" type="dropdown">
+                                                    <option value="">Select Semester</option>
+                                                    <option value="sem 1-1">SEM 1-1</option>
+                                                    <option value="sem 1-2">SEM 1-2</option>
+                                                    <option value="sem 2-1">SEM 2-1</option>
+                                                    <option value="sem 2-2">SEM 2-2</option>
+                                                    <option value="sem 3-1">SEM 3-1</option>
+                                                    <option value="sem 3-2">SEM 3-2</option>
+                                                    <option value="sem 4-1">SEM 4-1</option>
+                                                    <option value="sem 4-2">SEM 4-2</option>
+                                                </select>
+                                                <p class="information-error" id="errorSemster"></p>
+                                                <span class="information-error-img error-img-sem"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationCollegeId">Enter your Registered college ID<span class="astertick">*</span></label>
+                                                <input type="text" data-error="errorClgid" data-key="clgid" class="information-form-box" id="informationCollegeId" placeholder="Enter college ID">
+                                                <p class="information-error" id="errorClgid"></p>
+                                                <span class="information-error-img error-img-clgid"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationPhone">Phone Number <span class="astertick">*</span></label>
+                                                <input type="tel" data-error="errorPhoneno" data-key="phoneno" id="informationPhone" class="informationphone-form-box" placeholder="Enter Register Phone Number">
+                                                <span class="information-phone-prefix">+91 </span>
+                                                <p class="information-error" id="errorPhoneno"></p>
+                                                <span class="information-error-img error-img-phoneno"></span>
+                                            </div>
+                                            <div class="sub-information-box">
+                                                <label for="informationEmail">Email Address<span class="astertick">*</span></label>
+                                                <input type="text" id="informationEmail" data-error="errorEmail" data-key="email" class="information-form-box" placeholder="Enter your Email">
+                                                <p class="information-error" id="errorEmail"></p>
+                                                <span class="information-error-img error-img-email"></span>
+                                            </div>
+                                            <div class="sub-understand-cont">
+                                                <input type="checkbox" class="form-check-input-box" id="understandCheckbox">
+                                                <label for="understandCheckbox" data-error="errorCheckbox" data-key="checkbox" class="understand-label">
+                                                    understand that certain information pertaining to my use of the instant result access service 
+                                                    may be used for internal analysis and improvement by the academic institution and its authorized vendors.
+                                                    My information may be used to enhance the institution's educational services and better cater to student needs. 
+                                                    The following data may be collected: the date I accessed my academic results, the courses or subjects reviewed,
+                                                    and any additional feedback or comments I provide during this process. This information will be accessible to the 
+                                                    academic institution and its trusted partners for the sole purpose of improving academic services and will not be
+                                                    shared with any unauthorized parties.
+                                                </label>
+                                                <span class="information-error-img error-img-checkbox"></span>
+                                            </div>
+                                            <p class="information-error" id="errorCheckbox"></p>
+                                            <p><span class="astertick">*</span>Indicates a required field.</p>
+                                            <div class="sub-understand-cont mb-5">
+                                                <a class="back-to-eligible mr-5" id="backToEligibility">Back to Eligibility</a>
+                                                <a class="submit-to-result" id="continueToAccessResults">Submit</a>
+                                            </div>
+                                            <video class="elinre-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/elinre-img.mp4" >
+                                            </video>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="resultsTab">
+                                    <div class="content-container">
+                                        <form id="resultAccessForm" class="result-access-form mb-5"></form>
+                                        <video class="elinre-cont" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/elinre-img.mp4" >
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="not-eligible-info" id="notEligibleInfo">
+                            <p>You are not eligible at this time. For questions, please call <span>7032814255.</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom-rail-tab-container">
+                        <span class="benefits-content">Academic Access Benefits</span>
+                        <p>Welcome to SIDLLY, where we're committed to empowering students with instant access to their academic progress. 
+                            With our program, you can enjoy the following benefits:</p>
+                        <ul class="type-of benifits">
+                            <li class="each-type-benifits"><span class="benefits-content">Instant Academic Results:</span>Say goodbye to waiting 
+                                for weeks to know how you performed in your exams. Our program provides instant access to your academic results, 
+                                allowing you to track your progress in real-time.
+                            </li>
+                            <li class="each-type-benifits"><span class="benefits-content">Access Anywhere, Anytime:</span>Whether you're at home, 
+                                on your college campus, studying at the library, or using your mobile device, you can conveniently check your 
+                                academic results from anywhere. We offer flexibility and accessibility to suit your lifestyle.
+                            </li>
+                            <li class="each-type-benifits"><span class="benefits-content">Reliable and Secure:</span>Rest assured that your
+                                 academic data is kept secure and confidential. We prioritize your privacy and data protection, ensuring that your
+                                  educational journey remains confidential.
+                            </li>
+                            <li class="each-type-benifits"><span class="benefits-content">Stay Informed:</span>Being informed about your academic 
+                                progress is crucial for making informed decisions about your education. Our program helps you stay on top of your 
+                                performance, enabling you to identify areas for improvement and celebrate your successes.
+                            </li>
+                            <li class="each-type-benifits"><span class="benefits-content">Saves Time:</span>No more waiting in long lines or 
+                                dealing with administrative delays. Our program saves you time and effort, so you can focus on what matters most
+                                 - your education.
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="benifit-assistance">Need assistance or have questions? Contact our program specialist at <span class="highlight-no"><a href="">7032814255</a></span>. during our operating hours, Monday to Saturday. We're here to support your academic journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="../src/get_rslt.js"></script>
+</body>

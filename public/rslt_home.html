@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerate Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link href="../src/index.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b4968421e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="ml-2">
+                            <a><img src="../images/SIDLLY.png" alt="" class="main-result-icon-nav"></a>
+                        </div>
+                        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto pl-5 pr-5">
+                                <a class="nav-link nav-event" href="../public/snin.html" id="homeSignin">Sign in</a>
+                                <a class="nav-link nav-event" href="../public/snup.html" id="homeSignup"><span class="sign-up-button">sign up</span></a>
+                                <div class="user-profile-container" id="userProfileContainer">
+                                    <img src="../images/file.png" alt="" class="user-profile-img">
+                                    <div class="detail-user-profile-cont" id="detailUserProfile">
+                                        <ul class="rail-user1">
+                                            <li><img src="../images/file.png" class="rail-user-img"></li>
+                                            <li id="railUserName"></li>
+                                            <hr>
+                                            <li class="list-myaccount">
+                                                <a href="../public/my_accnt.html" class="myaccount">My Account</a>
+                                                <a href="" class="sign-out">Sign Out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="page-website bar-bg scroll-college-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light pr-5">
+                        <a class="navbar-brand result-name" href="">SIDLLY<br><span class="result-nav-heading">Results</span></a>
+                        <button class="navbar-toggler result-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="result-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav m-auto">
+                                <ul class="dropDown-container">
+                                    <li class="dropdown-list"><a href="../public/rslt_home.html" class="nav-home">Home</a></li>
+                                    <li class="dropdown-list">
+                                        <a>Statewise Results<span class="featurer-dropdown"><i class="fa-solid fa-caret-down"></i></span></a>
+                                        <ul class="dropDown-mini pt-3 pb-3" id="gettingDropdownList"></ul>
+                                    </li>
+                                    <li class="dropdown-list"><a href="../public/rslt_contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rail-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 container-rail-text pb-5">
+                    <div class="col-md-7 right-rail-text">
+                        <h1>Accelerate Learning. Ensure Achievement.</h1>
+                        <p>Empower students with efficient result access, collaborative tools, personalized learning, and more. 
+                            Enroll now for rapid progress—the swiftest advancement in educational empowerment.</p>
+                        <img src="../images/desk-social-header-banner.webp" alt="" class="top-head-image-result">
+                    </div>
+                    <div class="col-md-5 left-rail-text">
+                        <h5>Get started with your trial</h5>
+                        <div class="left-rail-form pt-3" id="leftRailForm"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rail-container1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 why-results-container mt-5 mb-5 pt-5 pb-5">
+                    <div class="col-12 col-md-4">
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Swift Progression-Propel your education journey with instant result access.</p>
+                        </div>
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Optimal Value-Ensuring the fastest and most impactful educational advancement.</p>
+                        </div>
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Personalized Enhancement-Tailored solutions to meet your unique educational needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Flexibility in Learning-Adapt and succeed with a platform designed for your growth.</p>
+                        </div>
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Transparent Commitment-No hidden agendas—we're dedicated to your progress.</p>
+                        </div>
+                        <div class="mini-why-container">
+                            <video class="top-head-image" role="presentation" preload="auto" muted="" loop="" autoplay="" playsinline="" tabindex="-1" src="../images/tick ani.mp4" >
+                            </video>
+                            <p>Seamless Integration-Effortlessly incorporate our platform into your learning routine.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 why-result-heading">
+                        <img src="../images/why choose results.svg" alt="" class="why-result-img">
+                        <h2>Why Choose Results Academic Accelerator?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rail-container2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="rail-box-wrap">
+                        <h2>Progress Faster,<span class="highlight-heading-text">Progress Better.</span></h2>
+                        <div class="common-section-rail-cont pt-5 mt-3">
+                            <div class="col-12 col-md-5 common-section-rail-img">
+                                <img src="../images/zs-lp-survey-index-page-quantitative-vs-qualitative.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-5 common-section-rail">
+                                <h2><span class="highlight-rail-text">No Redundant</span> Efforts</h2>
+                                <p>With every academic result instantly accessible to each student, educators, and institutions, your educational 
+                                    community can avoid unnecessary repetition and overlapping tasks, ensuring efficient academic advancement.</p>
+                                <div class="line-topleft">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 941.7 1258.3" style="enable-background:new 0 0 941.7 1258.3;" xml:space="preserve">
+                                        <path class="line-path" d="M12.9,218.3c0,0,70-117,282.8-176.8C431,3.5,581.9,11.8,714.2,55.3c45.3,14.9,89.2,34.4,123.5,63.2 s58.2,67.6,58,108c-0.2,40.4-24.8,79.3-61.1,106.2c-36.3,26.9-83.4,42.4-131.4,48.6c-39.2,5.1-81.4,3.8-115.6-13 c-34.1-16.8-57-52.2-45-83.7c13.8-35.8,68.2-52.6,111.7-42.1c43.4,10.5,75.7,41.5,96.3,75.1c22.5,36.6,46.3,102.6,50,153.4 c0.3,3.9,0.3,7.8,0.2,11.7c-1.1,46.9-8.5,405-1.8,762.1"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-section-rail-cont">
+                            <div class="col-12 col-md-5 common-section-rail-img order1 order-md-2">
+                                <img src="../images/jffjjf.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-5 common-section-rail order2 order-md-1">
+                                <h2><span class="highlight-rail-text">Streamlined</span>Academic Communication</h2>
+                                <p>Bring all your educational discussions under one roof. Say goodbye to the complexity of managing multiple 
+                                    platforms. Channel your academic conversations to ProgressHub, ensuring efficient communication and seamless 
+                                    result access for accelerated academic progress.</p>
+                                <div class="line-topright">
+                                    <svg viewBox="0 0 712.8 1097.1">
+                                        <path class="line-path" d="M67.6,13.5c69.5,131.9,198,251.9,203.4,381.5c1.5,36.3-1.4,74.5-20.9,105.2c-19.5,30.8-57.9,52.1-93.6,43 c-35.6-8.9-59.4-54.3-39.5-84.9c18.9-28.8,61.8-30.2,94.6-18.7c37,13,70,39.1,87.2,74.1c38.3,77.7-4.4,183.6,51.8,249.8 c37.8,41.3,79.9,58.1,127.1,76c25.1,7.9,64.3,27.8,214.9,32.7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-section-rail-cont">
+                            <div class="col-12 col-md-5 common-section-rail-img1">
+                                <img src="../images/zs-lp-survey-index-page-likert-scale.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-5 common-section-rail">
+                                <h2><span class="highlight-rail-text">Efficiency</span>through Academic Workflow Automation</h2>
+                                <p>Define your desired criteria for organizing tasks and establish automated rules for precise distribution, 
+                                    streamlining processes to enhance academic progress with instant result access.</p>
+                            </div>
+                        </div>
+                        <div class="common-section-rail-cont pb-5 mb-3">
+                            <div class="col-12 col-md-5 common-section-rail d-none d-md-block">
+                                <h2><span class="highlight-rail-text">Streamlined</span>Learning Experience</h2>
+                                <p>Say goodbye to information overload. Classify discussions by subjects and apply specific labels, providing 
+                                    a clear and efficient learning environment for rapid academic advancement.</p>
+                            </div>
+                            <div class="col-12 col-md-5 common-section-rail-img1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer-nav">
+        <div class="wrapper">
+            <div class="fn-inner-wrap">
+                <div class="zh-contact">
+                    <h5>Instant Access</h5>
+                    <ul>
+                        <li><a>Districts and Colleges</a></li>
+                        <li><a>Enrollment Information</a></li>
+                        <li><a>Result Access Form</a></li>
+                        <li><a>Declared Results</a></li>
+                        <li><a>Frequently Asked Questions</a></li>
+                        <li><a>User Experience</a></li>
+                        <li><a>Security Measures</a></li>
+                        <li><a>User Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Learn</h5>
+                    <ul>
+                        <li><a>Newsletter</a></li>
+                        <li><a>Training Certification</a></li>
+                        <li><a>Academy</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Tech Talk </a></li>
+                        <li><a>Perspectives</a></li>
+                        <li><a>Knowledge Base</a></li>
+                        <li><a>The Long Game</a></li>
+                        <li><a>Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a>User Community</a></li>
+                        <li><a>Customer Stories</a></li>
+                        <li><a>Influence</a></li>
+                        <li><a>Partner with Us</a></li>
+                        <li><a>SIDLLY for Startups</a></li>
+                        <li><a>Affiliate Program</a></li>
+                        <li><a>Humans of SIDLLY</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a>About Us</a></li>
+                        <li><a>Press</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Newsroom</a></li>
+                        <li><a>Branding Assets</a></li>
+                        <li><a>SIDLLY Schools</a></li>
+                        <li><a>Service Status</a></li>
+                        <li><a>Careers</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Contact Sales</h5>
+                    <ul>
+                        <li><a>Phone </a></li>
+                        <li class="d-flex flex-column"><a href="tel:7032814255">(+91)7032814255</a><a href="tel:8328516199">(+91)8328516199</a></li>
+                        <li><a> Email </a></li>
+                        <li><a href="mailto:results@sidllycorp.com" class="mailto">results@sidllycorp.com</a></li>
+                        <li><a>Support</a></li>
+                        <li><a>Talk to Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Security and Privacy</h5>
+                    <ul class="zh-policy">
+                        <li><a>Security</a></li>
+                        <li><a>IPR Complaints</a></li>
+                        <li><a> Anti-spam Policy</a></li>
+                        <li><a>Terms of Service</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Cookie Policy</a></li>
+                        <li><a>Abuse Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fn-btm-wrap">
+                <div class="zh-scl-share1-container">
+                    <div class="zh-scl-share1">
+                        <a class="social-icons twitter"></a>
+                        <a class="social-icons fb"></a>
+                        <a class="social-icons instagram"></a>
+                        <a class="social-icons link"></a>
+                        <a class="social-icons youtube"></a>
+                    </div>
+                </div>
+                <ul class="zh-policy">
+                    <li><a>SIDLLY Home</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Security</a></li>
+                    <li><a>IPR Complaints</a></li>
+                    <li><a> Anti-spam Policy</a></li>
+                    <li><a>Terms of Service</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Cookie Policy</a></li>
+                    <li><a>Abuse Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="../src/state&clgData.js"></script>
+    <script src="../src/nav.js"></script>
+    <script src="../src/rslt_home.js"></script>
+</body>

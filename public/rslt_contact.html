@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerate Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link href="../src/index.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b4968421e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="ml-2">
+                            <a><img src="../images/SIDLLY.png" alt="" class="main-result-icon-nav"></a>
+                        </div>
+                        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto pl-5 pr-5">
+                                <a class="nav-link nav-event" href="../public/snin.html" id="homeSignin">Sign in</a>
+                                <a class="nav-link nav-event" href="../public/snup.html" id="homeSignup"><span class="sign-up-button">sign up</span></a>
+                                <div class="user-profile-container" id="userProfileContainer">
+                                    <img src="../images/file.png" alt="" class="user-profile-img">
+                                    <div class="detail-user-profile-cont" id="detailUserProfile">
+                                        <ul class="rail-user1">
+                                            <li><img src="../images/file.png" class="rail-user-img"></li>
+                                            <li id="railUserName"></li>
+                                            <hr>
+                                            <li class="list-myaccount">
+                                                <a href="../public/my_accnt.html" class="myaccount">My Account</a>
+                                                <a href="" class="sign-out">Sign Out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+    </div>   
+    <div class="page-website contact-bar-bg scroll-college-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light pr-5">
+                        <a class="navbar-brand result-name" href="../public/rslt_home.html">SIDLLY<br><span class="result-nav-heading">Results</span></a>
+                        <button class="navbar-toggler result-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="result-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav m-auto">
+                                <ul class="dropDown-container">
+                                    <li class="dropdown-list"><a href="../public/rslt_home.html" class="nav-color-chnage">Home</a></li>
+                                    <li class="dropdown-list">
+                                        <a  class="nav-color-chnage">Statewise Results<span class="featurer-dropdown"><i class="fa-solid fa-caret-down"></i></span></a>
+                                        <ul class="dropDown-mini pt-3 pb-3" id="gettingDropdownList"></ul>
+                                    </li>
+                                    <li class="dropdown-list"><a href="../public/rslt_contact.html" class="nav-contact-us nav-color-chnage">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-us-bg">
+        <div class="contact-details-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="col-12 container-img-form-contact-us">
+                            <div class="col-12 col-lg-5 col-md-6 rail-text-contact-img">
+                                <h1>Finding your way around Sidlly?</h1>
+                                <h3>let us help!</h3>
+                                <video src="../images/let us help.mp4"></video>
+                                <p>We'll designate an education specialist to understand your setup and guide you on how StudentSuccess can cater 
+                                    to your educational goals through personalized sessions. Think of us as your dedicated academic partners.</p>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 rail-text-contact-description">
+                                <img src="../images/contact-form-above.png" alt="" class="contact-form-above">
+                                <div class="contact-us-form-bg">
+                                    <h5>Connect with us to initiate the journey.</h5>
+                                    <div id="contactUsForm">
+                                        <form id="myForm">
+                                            <div class="contact-form-input-container">
+                                                <input type="text" aria-required="true" data-error="nameErrorMsg" data-key="name" aria-label="Enter your name" aria-describedby="namefield-error" aria-invalid="true" class="input-contactus-form-box" id="namefield" placeholder="Name*">
+                                                <p id="nameErrorMsg" class="contact-error-msg"></p>
+                                            </div>
+                                            <div class="contact-form-input-container">
+                                                <input type="text" data-error="emailErrorMsg" data-key="email" class="input-contactus-form-box" id="emailfield" placeholder="Email*" autocomplete="off">
+                                                <p id="emailErrorMsg" class="contact-error-msg"></p>
+                                            </div>
+                                            <div class="contact-form-input-container">
+                                                <input type="text" data-error="phoneErrorMsg" data-key="phoneno" class="phoneinput-contact-form-box" id="phoneNofield" autocomplete="off" placeholder="Phone Number *">
+                                                <span class="phoneinput-contact-prefix">+91 </span>
+                                                <p id="phoneErrorMsg" class="contact-error-msg"></p>
+                                            </div>
+                                            <div class="contact-form-input-container">
+                                                <textarea id="achieveTextAreaField" data-error="achieveTextErrorMsg" data-key="achieveField" rows="5" class="about-textarea" placeholder="What are you looking to achieve*" data-gramm="false" wt-ignore-input="true"></textarea>
+                                                <p id="achieveTextErrorMsg" class="contact-error-msg"></p>
+                                            </div>
+                                            <div class="contact-form-input-container">
+                                                <input type="text" data-error="verificationTextErrorMsg" data-key="verificationNo" class="input-contactus-form-box" id="verificationInputfield" placeholder="Enter the verification code*">
+                                                <p id="verificationTextErrorMsg" class="contact-error-msg"></p>
+                                            </div>
+                                            <div class="contact-form-input-container">
+                                                <div class="code-container">
+                                                    <h6 class="display-code" id="displayCode">PeafJm</h6>
+                                                    <i class="fa-solid fa-arrows-rotate display-icon" id="displayIcon"></i>
+                                                </div>
+                                            </div>
+                                            <label class="privacy-label">By submitting this form, you agree to the processing of personal data according to our<a href="" target="">Privacy Policy</a></label>
+                                            <button class="submit-button" id="getStartedButton">get started</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rail-contact-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-12 container-rail-contact">
+                        <div class="col-12 col-md-6 mini-rail-contact1">
+                            <div class="mini-max-rail-contact1">
+                                <img src="../images/existing customer1.png" alt="">
+                                <h5>EXISTING CUSTOMER</h5>
+                                <p>Visit our help forum for technical support</p>
+                                <h6>Experiencing issues with a account you're already using? Browse through our help docs, videos, 
+                                    and tutorials, or engage with experts from the Sidlly support community.</h6>
+                                <a href="">take me to the help center</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mini-rail-contact2">
+                            <div class="mini-max-rail-contact2">
+                                <img src="../images/exisiting customer2.png" alt="">
+                                <h5>EXISTING CUSTOMER</h5>
+                                <p>If you can't find what you're looking for...</p>
+                                <h6>Raise a ticket and detail what you need help with. Our support team will be happy to lend a helping hand!</h6>
+                                <a href="">submit request</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-banner">
+                        <div class="floating-banner-contact animate">
+                            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+                            <a href=""><img src="../images/zoho-one-talk-to-us.png" alt="" class="floating-banner-img1"></a>
+                        </div>
+                    </div>
+                    <div class="contact-info-container">
+                        <div class="card-rail-1">
+                            <span class="card-badge">i'm new here</span>
+                            <div class="contact-mini-container">
+                                <img src="../images/cont1.png" alt="" class="contact-mini-img">
+                                <h6>Seeking a Demonstration or Need Clarifications about Educational Empowerment Solutions</h6>
+                                <span><a href="mailto:academic@studentsuccess.com?,%0A%0AThis%20is%20the%20body%20of%20the%20email.">academic@studentsuccess.com</a></span>
+                            </div>
+                        </div>
+                        <div class="card-rail-2">
+                            <span class="right-card-badge">EXISTING CUSTOMER</span>
+                            <div class="contact-mini-two-container">
+                                <div class="card-width-right-box">
+                                    <img src="../images/cont2.png" alt="" class="contact-mini-img">
+                                    <h6>Need help with Supplementary Services for your Academic Enhancement Platform?</h6>
+                                    <span><a href="mailto:upgrade@Sidlly.com?,%0A%0AThis%20is%20the%20body%20of%20the%20email.">upgrade@Sidlly.com</a></span>                                       
+                                </div>
+                                <div class="card-width-right-box">
+                                    <img src="../images/cont3.png" alt="" class="contact-mini-img">
+                                    <h6>Want to renew your Information or need details about yourExisting Academic Progress?</h6>
+                                    <span><a href="mailto:renewal@Sidlly.com?,%0A%0AThis%20is%20the%20body%20of%20the%20email.">renewal@Sidlly.com</a></span>
+                                </div>
+                                <div class="card-width-right-box last-box">
+                                    <img src="../images/cont4.png" alt="" class="contact-mini-img">
+                                    <h6>Considering Subscription Changes or Downgrades? While we're sorry to part ways, we're here to assist you.</h6>
+                                    <span><a href="mailto:cancellation@Sidlly.com?,%0A%0AThis%20is%20the%20body%20of%20the%20email.">cancellation@Sidlly.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions-container-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mt-5 mb-5 pt-5">
+                    <div class="fques-container">
+                        <img src="../images/fqs.webp" alt="" class="fques-img">
+                        <ul class="fques-list-container">
+                            <h1 class="fques-hd">Frequently asked questions</h1>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques1">
+                                    <h4>What is Instant Result Access?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques1">
+                                    <h6>Instant Result Access refers to the ability of students to quickly view their exam outcomes online, 
+                                        allowing them to stay informed about their academic progress in real time.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques2">
+                                    <h4>How does the platform work?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques2">
+                                    <h6>The platform streamlines the process of accessing exam results, enabling students to log in, select 
+                                        the relevant exam, and view their outcomes instantly.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques3">
+                                    <h4>Is my data secure?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques3">
+                                    <h6>Yes, we prioritize data security. We employ robust encryption and protective measures to ensure the 
+                                        privacy and confidentiality of student information.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques4">
+                                    <h4>Can students access results from previous semesters?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques4">
+                                    <h6>Yes, students can access results from all previous semesters, providing a comprehensive 
+                                        view of their academic journey.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques5">
+                                    <h4>Is the platform user-friendly?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques5">
+                                    <h6>Yes, the platform is designed with a user-friendly interface to ensure seamless navigation 
+                                        for both students and educators.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques6">
+                                    <h4>How can I get started?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques6">
+                                    <h6>Getting started is easy. Simply sign up, create an account, and follow the steps to access your instant results.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques7">
+                                    <h4>What educational institutions can use this platform?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques7">
+                                    <h6>The platform is designed to cater to various educational institutions,colleges, and universities across 
+                                        different states in India.</h6>
+                                </div>
+                            </li>
+                            <li class="fques-each-item ">
+                                <div class="top-fques" data-target="bottomFques8">
+                                    <h4>Can educators also benefit from the platform?</h4>
+                                    <div class="fques-icon"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                                <div class="bottom-fques" id="bottomFques8">
+                                    <h6>Absolutely. Educators can utilize the platform to efficiently distribute results and monitor student 
+                                        progress, enhancing the overall educational experience.</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-fques-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bottom-fques-container pt-5 pb-5">
+                        <h3>Still can't find what you're looking for?</h3>
+                        <span>Write to us: <a href="mailto:support@Sidlly.com?,%0A%0AThis%20is%20the%20body%20of%20the%20email.">support@sidlly.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer-nav">
+        <div class="wrapper">
+            <div class="fn-inner-wrap">
+                <div class="zh-contact">
+                    <h5>Instant Access</h5>
+                    <ul>
+                        <li><a>Districts and Colleges</a></li>
+                        <li><a>Enrollment Information</a></li>
+                        <li><a>Result Access Form</a></li>
+                        <li><a>Declared Results</a></li>
+                        <li><a>Frequently Asked Questions</a></li>
+                        <li><a>User Experience</a></li>
+                        <li><a>Security Measures</a></li>
+                        <li><a>User Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Learn</h5>
+                    <ul>
+                        <li><a>Newsletter</a></li>
+                        <li><a>Training Certification</a></li>
+                        <li><a>Academy</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Tech Talk </a></li>
+                        <li><a>Perspectives</a></li>
+                        <li><a>Knowledge Base</a></li>
+                        <li><a>The Long Game</a></li>
+                        <li><a>Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a>User Community</a></li>
+                        <li><a>Customer Stories</a></li>
+                        <li><a>Influence</a></li>
+                        <li><a>Partner with Us</a></li>
+                        <li><a>SIDLLY for Startups</a></li>
+                        <li><a>Affiliate Program</a></li>
+                        <li><a>Humans of SIDLLY</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a>About Us</a></li>
+                        <li><a>Press</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Newsroom</a></li>
+                        <li><a>Branding Assets</a></li>
+                        <li><a>SIDLLY Schools</a></li>
+                        <li><a>Service Status</a></li>
+                        <li><a>Careers</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact top-space">
+                    <h5>Contact Sales</h5>
+                    <ul>
+                        <li><a>Phone </a></li>
+                        <li class="d-flex flex-column"><a href="tel:7032814255">(+91)7032814255</a><a href="tel:8328516199">(+91)8328516199</a></li>
+                        <li><a> Email </a></li>
+                        <li><a href="mailto:results@sidllycorp.com" class="mailto">results@sidllycorp.com</a></li>
+                        <li><a>Support</a></li>
+                        <li><a>Talk to Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="zh-contact">
+                    <h5>Security and Privacy</h5>
+                    <ul class="zh-policy">
+                        <li><a>Security</a></li>
+                        <li><a>IPR Complaints</a></li>
+                        <li><a> Anti-spam Policy</a></li>
+                        <li><a>Terms of Service</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Cookie Policy</a></li>
+                        <li><a>Abuse Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fn-btm-wrap">
+                <div class="zh-scl-share1-container">
+                    <div class="zh-scl-share1">
+                        <a class="social-icons twitter"></a>
+                        <a class="social-icons fb"></a>
+                        <a class="social-icons instagram"></a>
+                        <a class="social-icons link"></a>
+                        <a class="social-icons youtube"></a>
+                    </div>
+                </div>
+                <ul class="zh-policy">
+                    <li><a>SIDLLY Home</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Security</a></li>
+                    <li><a>IPR Complaints</a></li>
+                    <li><a> Anti-spam Policy</a></li>
+                    <li><a>Terms of Service</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Cookie Policy</a></li>
+                    <li><a>Abuse Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script> 
+    <script src="../src/state&clgData.js"></script>
+    <script src="../src/nav.js"></script>
+    <script src="../src/rslt_cont.js"></script>
+</body>
